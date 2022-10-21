@@ -18,6 +18,10 @@
 
 [Live Demo Link](#)
 
+## Video Link (Recorded by Loom) 📹
+
+[Video Link](#)
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
