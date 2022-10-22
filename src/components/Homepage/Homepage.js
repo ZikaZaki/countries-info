@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchCountries } from '../../redux/configureStore';
 import CountryList from '../CountryList/CountryList';
@@ -10,14 +10,14 @@ import styles from './Homepage.module.css';
 const Homepage = () => {
   const dispatch = useDispatch();
   const countries = useSelector((state) => state.countries);
-  const [filter, setFilter] = useState('');
-  const filterCountries = (e) => {
-    if( e.target.value === 'All' ) {
-      setFilter(countries);
-    }else {
-      setFilter(countries.filter((country) => country.continent === e.target.value));
-    }
-  };
+  // const [filter, setFilter] = useState('');
+  // const filterCountries = (e) => {
+  //   if (e.target.value === 'All') {
+  //     setFilter(countries);
+  //   } else {
+  //     setFilter(countries.filter((country) => country.continent === e.target.value));
+  //   }
+  // };
 
   useEffect(() => {
     dispatch(fetchCountries());
