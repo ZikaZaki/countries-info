@@ -12,11 +12,11 @@
 - **Technologies used**: NPM, Webpack, & Jest Library.
 - **Tools**: Git, Gitflow, GitHub, Netlify, VS Code, & Chrome Browser.
 
-## Live Demo (Not Yet) 🚀
+## Live Demo (Deployed On Netlify) 🚀
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/68ea255b-ae38-4005-968b-6fbd0a8d676b/deploy-status)](#)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/68ea255b-ae38-4005-968b-6fbd0a8d676b/deploy-status)](https://635471502ef0e179bf2f6409--boisterous-dango-e226ad.netlify.app/)
 
-[Live Demo Link](#)
+[Live Demo Link](https://635471502ef0e179bf2f6409--boisterous-dango-e226ad.netlify.app/)
 
 ## Video Link (Recorded by Loom) 📹
 
