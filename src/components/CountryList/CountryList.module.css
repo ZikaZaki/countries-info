@@ -36,24 +36,20 @@
   background-color: var(--primary);
 }
 
-
 @media only screen and (max-width: 350px) {
   .country-list {
     grid-template-columns: repeat(1, 1fr);
   }
-  
 }
 
 @media only screen and (min-width: 600px) {
   .country-list {
     grid-template-columns: repeat(3, 1fr);
   }
-  
 }
 
 @media only screen and (min-width: 700px) {
   .country-list {
     grid-template-columns: repeat(4, 1fr);
   }
-  
 }

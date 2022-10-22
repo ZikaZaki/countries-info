@@ -30,9 +30,7 @@ export const countriesSlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(fetchCountries.fulfilled, (state, action) => {
-        console.log(action.payload);
         const countries = action.payload.map((country) => ({
-        //   id: country.id,
           continent: country.region,
           commonName: country.name.common,
           officialName: country.name.official,
@@ -46,7 +44,6 @@ export const countriesSlice = createSlice({
           coatOfArms: country.coatOfArms,
           map: country.maps,
         }));
-        console.log('from countries....', countries[0].capital[0]);
         return countries;
       });
   },
