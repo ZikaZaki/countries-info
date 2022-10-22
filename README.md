@@ -20,7 +20,7 @@
 
 ## Video Link (Recorded by Loom) 📹
 
-[Video Link](#)
+[Video Link](https://loom.com/share/86664c4cbbea4828a9eb5ca11f5eccc0)
 
 ## Getting Started
 
