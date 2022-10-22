@@ -32,19 +32,10 @@ const Country = ({
       <div className={styles['country-info']}>
         <h2 className={styles['country-name']}>{commonName}</h2>
         <div>
-          <p>Continent: {continent}</p>
-          {/* <p>
-            Capital:
-            {capital}
-          </p>
           <p>
-            Area:
-            {area}
+            Continent:
+            {continent}
           </p>
-          <p>
-            Population:
-            {population}
-          </p> */}
         </div>
       </div>
       <div className={styles['details-btn']}>

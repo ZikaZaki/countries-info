@@ -24,9 +24,9 @@ const initialState = {};
 export const countryDetailsSlice = createSlice({
   name: 'details',
   initialState,
-//   reducers: {
-//     deleteDetails: () => initialState,
-//   },
+  //   reducers: {
+  //     deleteDetails: () => initialState,
+  //   },
   extraReducers: (builder) => {
     builder.addCase(fetchCountryDetails.fulfilled, (state, action) => {
       const country = action.payload.data[0];
@@ -34,13 +34,13 @@ export const countryDetailsSlice = createSlice({
         continent: country.region,
         commonName: country.name.common,
         officialName: country.name.official,
-        capital: country.capital,
+        capital: country.capital[0],
         language: country.languages,
-        timezone: country.timezones,
-        currency: country.currencies,
+        timezone: country.timezones[0],
+        currency: country.currencies[0],
         area: country.area,
         population: country.population,
-        flag: country.flags,
+        flag: country.flags.svg,
         coatOfArms: country.coatOfArms,
         map: country.maps,
       };

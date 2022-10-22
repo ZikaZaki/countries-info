@@ -55,12 +55,11 @@
 .details-list {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   width: 100%;
-  padding: 1rem;
-  background-color: var(--primary);
+  padding: 0;
 }
 
 .list-item {
@@ -70,6 +69,29 @@
   align-items: center;
   height: 5vh;
   width: 100%;
-  padding: 0.2rem 1rem;
+  padding: 2rem;
+}
+
+.list-item h2 {
+  display: flex;
+  font-size: calc(10px + 2vmin);
+  font-weight: bold;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.list-item:nth-child(even) {
   background-color: var(--primary);
+}
+
+.list-item svg {
+  display: flex;
+  font-size: calc(20px + 2vmin);
+  font-weight: bold;
+  text-align: center;
+  justify-self: flex-end;
+  align-self: center;
+  padding: 0;
+  margin: 0;
 }
