@@ -20,9 +20,6 @@ const Country = ({
   flag,
 }) => {
   const dispatch = useDispatch();
-  const handleClick = () => {
-    console.log('clicked');
-  };
 
   return (
     <div className={styles['country-card']} key={id}>
@@ -54,9 +51,9 @@ Country.propTypes = {
   continent: PropTypes.string.isRequired,
   // capital: PropTypes.string.isRequired,
   // area: PropTypes.string.isRequired,
-  population: PropTypes.number.isRequired,
+  // population: PropTypes.number.isRequired,
   //   map: PropTypes.string.isRequired,
-  flag: PropTypes.object.isRequired,
+  flag: PropTypes.string.isRequired,
 };
 
 export default Country;

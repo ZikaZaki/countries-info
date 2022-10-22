@@ -77,11 +77,11 @@
 }
 
 .details-btn a {
-    display: flex;
-    color: var(--neutral);
-    text-decoration: none;
+  display: flex;
+  color: var(--neutral);
+  text-decoration: none;
 }
 
 .details-btn a:hover {
-    color: var(--primary);
+  color: var(--primary);
 }

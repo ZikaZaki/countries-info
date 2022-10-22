@@ -11,6 +11,7 @@ const CountryList = ({ countries }) => (
     {countries.map((country) => (
       <Country
         id={uuidv4()}
+        key={country.id}
         commonName={country.commonName}
         continent={country.continent}
         officialName={country.officialName}

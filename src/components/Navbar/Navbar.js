@@ -15,7 +15,7 @@ const Navbar = () => (
       <NavLink to="/">
         <IoIosArrowBack />
       </NavLink>
-      <span>World Map</span>
+      <span>COUNTRIES INFO 2022</span>
 
       <NavLink to="/settings">
         <IoIosSettings />
