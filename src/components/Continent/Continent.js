@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 // import { toggleContinent } from '../../redux/continents/continents';
 import { HiOutlineArrowCircleRight } from 'react-icons/hi';
 
@@ -8,6 +9,7 @@ import { HiOutlineArrowCircleRight } from 'react-icons/hi';
 import styles from './Continent.module.css';
 
 const Continent = ({
+  id,
   name,
   area,
   countries,
@@ -37,14 +39,16 @@ const Continent = ({
         </div>
       </div>
       <div className={styles['details-btn']}>
-        <HiOutlineArrowCircleRight onClick={() => dispatch(handleClick())} />
+        <Link to={`/continents/${id}`}>
+          <HiOutlineArrowCircleRight onClick={() => dispatch(handleClick())} />
+        </Link>
       </div>
     </div>
   );
 };
 
 Continent.propTypes = {
-  // id: PropTypes.number.isRequired,
+  id: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
   area: PropTypes.string.isRequired,
   countries: PropTypes.number.isRequired,

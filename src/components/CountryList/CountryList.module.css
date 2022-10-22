@@ -1,0 +1,34 @@
+.country-list {
+    display: grid;
+  
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-auto-flow: row; */
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+  }
+  
+  .list-item:hover {
+    background-color: var(--primary);
+    cursor: pointer;
+  }
+  
+  .list-item:nth-child(0n+1) {
+    background-color: var(--primary);
+  }
+  
+  .list-item:nth-child(0n+4) {
+    background-color: var(--primary);
+  }
+  
+  .list-item:nth-child(0n+5) {
+    background-color: var(--primary);
+  }
+  
+  /* .list-item:nth-of-type(odd) {
+    background-color: gainsboro;
+  } */
+  

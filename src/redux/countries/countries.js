@@ -60,6 +60,6 @@ export const countriesSlice = createSlice({
   },
 });
 
-// export const { toggleRocket } = rocketsSlice.actions;
+// export const { toggleRocket } = countriesSlice.actions;
 // Exporting the reducer
 export default countriesSlice.reducer;

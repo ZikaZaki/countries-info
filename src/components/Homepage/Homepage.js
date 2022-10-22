@@ -1,23 +1,27 @@
-import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { getContinents } from '../../redux/configureStore';
+import React, { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchCountries } from '../../redux/configureStore';
+import CountryList from '../CountryList/CountryList';
 import world from '../../assets/images/World.svg';
-import Continent from '../Continent/Continent';
 
 // Import Styling
 import styles from './Homepage.module.css';
 
 const Homepage = () => {
-  const countries = useSelector((state) => state.countries);
-  const continents = useSelector((state) => state.continents);
-
   const dispatch = useDispatch();
-  const filterContinents = (e) => {
-    dispatch(getContinents(e.target.value));
+  const countries = useSelector((state) => state.countries);
+  const [filter, setFilter] = useState('');
+  const filterCountries = (e) => {
+    if( e.target.value === 'All' ) {
+      setFilter(countries);
+    }else {
+      setFilter(countries.filter((country) => country.continent === e.target.value));
+    }
   };
 
-  console.log(countries);
-  console.log(continents);
+  useEffect(() => {
+    dispatch(fetchCountries());
+  }, [dispatch]);
 
   return (
     <div className={styles['home-container']}>
@@ -40,14 +44,14 @@ const Homepage = () => {
           <select
             type="text"
             value="Select Continent"
-            onChange={filterContinents}
+            onChange={() => console.log('clicked')}
             placeholder="Select Your Continent"
             name="continent"
             className="button"
           >
             <option value="All">All</option>
-            <option value="Africa">Africa</option>
             <option value="Asia">Asia</option>
+            <option value="Africa">Africa</option>
             <option value="Antarctica">Antarctica</option>
             <option value="Europe">Europe</option>
             <option value="Oceania">Oceania</option>
@@ -56,21 +60,8 @@ const Homepage = () => {
           </select>
         </label>
       </div>
-      <div className={styles['continent-list']}>
-        {continents.map((continent) => (
-          <div
-            key={continent.id}
-            className={styles['list-item']}
-          >
-            <Continent
-              name={continent.name}
-              area={continent.area}
-              countries={continent.countries}
-              map={continent.map}
-            />
-          </div>
-        ))}
-      </div>
+      <CountryList countries={countries} />
+      {/* <CountryList countries={filter || countries} /> */}
     </div>
   );
 };
