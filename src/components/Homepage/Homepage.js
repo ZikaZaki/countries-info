@@ -1,5 +1,4 @@
-// import React, { useEffect, useState } from 'react';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchCountries } from '../../redux/configureStore';
 import CountryList from '../CountryList/CountryList';
@@ -11,18 +10,19 @@ import styles from './Homepage.module.css';
 const Homepage = () => {
   const dispatch = useDispatch();
   const countries = useSelector((state) => state.countries);
-  // const [filter, setFilter] = useState('');
-  // const filterCountries = (e) => {
-  //   if (e.target.value === 'All') {
-  //     setFilter(countries);
-  //   } else {
-  //     setFilter(countries.filter((country) => country.continent === e.target.value));
-  //   }
-  // };
+  const [filter, setFilter] = useState(countries);
+  const filterCountries = (e) => {
+    if (e.target.value === 'All') {
+      setFilter(countries);
+    } else {
+      setFilter(countries.filter((country) => country.continent === e.target.value));
+    }
+  };
 
-  useEffect(() => {
-    dispatch(fetchCountries());
-  }, [dispatch]);
+  useEffect(
+    () => { dispatch(fetchCountries()); setFilter(null); },
+    [dispatch],
+  );
 
   return (
     <div className={styles['home-container']}>
@@ -43,7 +43,7 @@ const Homepage = () => {
           <select
             type="text"
             value="Select Continent"
-            onChange={() => console.log('clicked')}
+            onChange={filterCountries}
             placeholder="Select Your Continent"
             name="continent"
             className="button"
@@ -51,16 +51,13 @@ const Homepage = () => {
             <option value="All">All</option>
             <option value="Asia">Asia</option>
             <option value="Africa">Africa</option>
-            <option value="Antarctica">Antarctica</option>
+            <option value="Americas">Americas</option>
             <option value="Europe">Europe</option>
             <option value="Oceania">Oceania</option>
-            <option value="North America">North America</option>
-            <option value="South America">South America</option>
           </select>
         </label>
       </div>
-      <CountryList countries={countries} />
-      {/* <CountryList countries={filter || countries} /> */}
+      <CountryList countries={filter || countries} />
     </div>
   );
 };
