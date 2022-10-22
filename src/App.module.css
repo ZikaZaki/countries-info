@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('http://fonts.googleapis.com/css?family=Lato:400,700');
 
-/* ******Main & Secondary Colors****** */
 :root {
   --primary: #ec4c8a;
   --secondary: #2c3e50;
@@ -13,13 +12,11 @@
   --open-sans: "Open Sans", sans-serif;
 }
 
-/* **********Global Classes********** */
 .App {
   text-align: center;
 }
 
 .App-header {
-  /* background-color: #282c34; */
   background-color: var(--primary);
   min-height: 100vh;
   display: flex;
@@ -30,26 +27,3 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-/* ====================================Media Query Start==================================== */
-
-/*******  First Breakpoint  *******/
-
-/* @media screen
-  and (min-width: 586px) {
-  .App {
-    min-width: 25rem;
-    height: 2.5rem;
-  }
-} */
-
-/*******  Second Breakpoint  *******/
-
-/* @media screen
-  and (min-width: 768px) {
-  .App-header {
-    padding: 35px 165px;
-  }
-} */
-
-/* =====================================Media Query End===================================== */

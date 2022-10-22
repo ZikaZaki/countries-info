@@ -24,9 +24,6 @@ const initialState = {};
 export const countryDetailsSlice = createSlice({
   name: 'details',
   initialState,
-  //   reducers: {
-  //     deleteDetails: () => initialState,
-  //   },
   extraReducers: (builder) => {
     builder.addCase(fetchCountryDetails.fulfilled, (state, action) => {
       const country = action.payload.data[0];
@@ -48,5 +45,4 @@ export const countryDetailsSlice = createSlice({
   },
 });
 
-// export const { deleteDetails } = countryDetailsSlice.actions;
 export default countryDetailsSlice.reducer;

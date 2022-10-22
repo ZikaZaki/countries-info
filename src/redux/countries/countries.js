@@ -27,14 +27,6 @@ export const fetchCountries = createAsyncThunk(
 export const countriesSlice = createSlice({
   name: 'countries',
   initialState,
-  //   reducers: {
-  //     toggleRocket(state, action) {
-  //       const rocket = state.find((rocket) => rocket.id === action.payload);
-  //       if (rocket) {
-  //         rocket.reserved = !rocket.reserved;
-  //       }
-  //     },
-  //   },
   extraReducers: (builder) => {
     builder
       .addCase(fetchCountries.fulfilled, (state, action) => {
@@ -60,6 +52,5 @@ export const countriesSlice = createSlice({
   },
 });
 
-// export const { toggleRocket } = rocketsSlice.actions;
 // Exporting the reducer
 export default countriesSlice.reducer;

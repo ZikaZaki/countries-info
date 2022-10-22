@@ -18,7 +18,6 @@ const CountryList = ({ countries }) => (
         capital={country.capital}
         area={country.area}
         population={country.population}
-            // map={country.map}
         flag={country.flag}
       />
     ))}

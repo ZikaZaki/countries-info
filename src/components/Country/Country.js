@@ -10,13 +10,8 @@ import styles from './Country.module.css';
 
 const Country = ({
   id,
-  //   officialName,
   commonName,
   continent,
-  // capital,
-  // area,
-  // population,
-  //   map,
   flag,
 }) => {
   const dispatch = useDispatch();
@@ -46,13 +41,8 @@ const Country = ({
 
 Country.propTypes = {
   id: PropTypes.string.isRequired,
-  //   officialName: PropTypes.string.isRequired,
   commonName: PropTypes.string.isRequired,
   continent: PropTypes.string.isRequired,
-  // capital: PropTypes.string.isRequired,
-  // area: PropTypes.string.isRequired,
-  // population: PropTypes.number.isRequired,
-  //   map: PropTypes.string.isRequired,
   flag: PropTypes.string.isRequired,
 };
 
