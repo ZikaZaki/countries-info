@@ -89,6 +89,8 @@ Feel free to check the [issues page](../../issues/).
 ## Acknowledgments
 
 - [Microverse](https://www.microverse.org/)
+- [REST Countries API](https://restcountries.com/#rest-countries).
+- [ Nelson Sakwa](https://www.behance.net/sakwadesignstudio) for his amazing  [Ballhead App](<https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)>) design on [Behance](https://www.behance.net/onboarding).
 - Code Reviewers & Coding Partners
 - Hat tip to anyone whose code was used
 - Inspiration

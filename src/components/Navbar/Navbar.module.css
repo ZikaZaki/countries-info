@@ -1,0 +1,26 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  color: var(--neutral);
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+.navbar-container a {
+  font-family: var(--lato);
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--neutral);
+}
