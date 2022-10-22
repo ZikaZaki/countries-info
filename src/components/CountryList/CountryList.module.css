@@ -10,6 +10,17 @@
   padding: 0;
 }
 
+.list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: justify;
+  height: 100%;
+  width: 100%;
+  padding: 0.5rem;
+}
+
 .list-item:hover {
   background-color: var(--primary);
   cursor: pointer;
@@ -26,7 +37,3 @@
 .list-item:nth-child(0n+5) {
   background-color: var(--primary);
 }
-
-/* .list-item:nth-of-type(odd) {
-    background-color: gainsboro;
-  } */

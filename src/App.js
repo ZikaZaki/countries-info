@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 import { fetchCountries } from './redux/configureStore';
 import Navbar from './components/Navbar/Navbar';
 import Homepage from './components/Homepage/Homepage';
+import CountryDetails from './components/CountryDetails/CountryDetails';
 
 // Import Styling
 import styles from './App.module.css';
@@ -20,9 +21,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Homepage />} />
-        {/* <Route path="/continents/:id" element={<ContinentDetails />} /> */}
-        {/* <Route path="/missions" element={<MissionTable />} /> */}
-        {/* <Route path="/profile" element={<ProfilePage />} /> */}
+        <Route path="/details" element={<CountryDetails />} />
       </Routes>
     </div>
   );

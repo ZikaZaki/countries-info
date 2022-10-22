@@ -1,9 +1,11 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import logger from 'redux-logger';
 import countriesReducer, { fetchCountries } from './countries/countries';
+import countryDetailsReducer, { fetchCountryDetails } from './countrydetails/countrydetails';
 
 const rootReducer = combineReducers({
   countries: countriesReducer,
+  details: countryDetailsReducer,
 });
 
 const store = configureStore({
@@ -11,6 +13,6 @@ const store = configureStore({
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
 });
 
-export { fetchCountries };
+export { fetchCountries, fetchCountryDetails };
 
 export default store;
