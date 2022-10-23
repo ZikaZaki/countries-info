@@ -7,7 +7,7 @@ import Country from '../Country/Country';
 import styles from './CountryList.module.css';
 
 const CountryList = ({ countries }) => (
-  <div className={styles['country-list']}>
+  <div className={styles['country-list']} data-testid="countryList-container">
     {countries.map((country) => (
       <Country
         id={uuidv4()}

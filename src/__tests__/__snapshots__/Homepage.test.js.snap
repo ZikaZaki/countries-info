@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check if the component has changed 1`] = `
+Array [
+  <div
+    className="home-container"
+    data-testid="home-container"
+  >
+    <div
+      className="world-map"
+    >
+      <div
+        className="map"
+      >
+        <img
+          alt="World Map"
+          src="World.svg"
+        />
+      </div>
+      <div
+        className="map-info"
+      >
+        <h2>
+          World Map
+        </h2>
+        <p>
+          2022
+        </p>
+      </div>
+    </div>
+    <div
+      className="headline"
+    >
+      <h2>
+        STATS BY CONTINENTS
+      </h2>
+      <label
+        htmlFor="continents"
+      >
+        <select
+          className="button"
+          name="continent"
+          onChange={[Function]}
+          placeholder="Select Your Continent"
+          type="text"
+          value="Select Continent"
+        >
+          <option
+            value="All"
+          >
+            All
+          </option>
+          <option
+            value="Asia"
+          >
+            Asia
+          </option>
+          <option
+            value="Africa"
+          >
+            Africa
+          </option>
+          <option
+            value="Americas"
+          >
+            Americas
+          </option>
+          <option
+            value="Europe"
+          >
+            Europe
+          </option>
+          <option
+            value="Oceania"
+          >
+            Oceania
+          </option>
+        </select>
+      </label>
+    </div>
+    <div
+      className="country-list"
+      data-testid="countryList-container"
+    />
+  </div>,
+  ",",
+]
+`;

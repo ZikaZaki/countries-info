@@ -17,7 +17,7 @@ const Country = ({
   const dispatch = useDispatch();
 
   return (
-    <div className={styles['country-card']} key={id}>
+    <div className={styles['country-card']} key={id} data-testid="country-container">
       <div className={styles['country-flag']}>
         <img src={flag.png} alt="Country Flag" />
       </div>

@@ -25,7 +25,7 @@ const Homepage = () => {
   );
 
   return (
-    <div className={styles['home-container']}>
+    <div className={styles['home-container']} data-testid="home-container">
       <div className={styles['world-map']}>
         <div className={styles.map}>
           <img src={world} alt="World Map" />

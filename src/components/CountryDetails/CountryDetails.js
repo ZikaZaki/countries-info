@@ -9,7 +9,7 @@ const CountryDetails = () => {
   const countryDetails = useSelector((state) => state.details);
 
   return (
-    <div className={styles['details-container']}>
+    <div className={styles['details-container']} data-testid="details-container">
       <div className={styles['country-map']}>
         <img src={countryDetails.flag} alt="Country Map" />
       </div>

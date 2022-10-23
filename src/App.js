@@ -17,7 +17,7 @@ function App() {
   }, [dispatch]);
 
   return (
-    <div className={styles['App-header']}>
+    <div className={styles['App-header']} data-testid="app-container">
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Homepage />} />

@@ -9,7 +9,7 @@ import {
 import styles from './Navbar.module.css';
 
 const Navbar = () => (
-  <nav className={styles.navbar}>
+  <nav className={styles.navbar} data-testid="nav-container">
     <div className={styles['navbar-container']}>
       <NavLink to="/">
         <IoIosArrowBack />
