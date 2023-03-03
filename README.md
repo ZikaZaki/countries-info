@@ -1,8 +1,6 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 # Countries-Info
 
-> This web application is built upon real live data from the **REST Countries API**. The main purpose is to build a web application  that provides all sorts of useful information about every country. It includes data from ISO 3166 (countries and states/subdivisions ), ISO 4217 (currency), and E.164 (phone numbers). and scientific space travel services. The application will give users to an overview of any country they're willing to visit.
+> This web application is built upon real live data from the **REST Countries API**. The main purpose is to build a web application  that provides all sorts of useful information about every country. It includes data from ISO 3166 (countries and states/subdivisions ), ISO 4217 (currency), and E.164 (phone numbers). The application will allow users to get information about any country they're willing to visit.
 
 ## Built With ⚙️
 
@@ -45,7 +43,7 @@ To get a local copy up and running follow these simple example steps.
 - Run the following command:
 
 ```
-$ git clone https://github.com/ZikaZaki/travelers-hub.git
+$ git clone https://github.com/ZikaZaki/countries-info.git
 ```
 
 - Once finished you should see a new folder called **countries-info** folder in your current directory.
@@ -99,5 +97,3 @@ Feel free to check the [issues page](../../issues/).
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
